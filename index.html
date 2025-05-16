@@ -9,7 +9,7 @@
 </head>
 <body class="bg-zinc-900 text-white">
     <!-- Header begin -->
-    <div class="bg-yellow-300 w-dvw h-20 justify-between flex p-10 items-center">
+    <div class="bg-yellow-300 w-dvw h-20 justify-between flex p-10 items-center z-20 relative">
         <!-- Nome da pessoa -->
         <div class="font-bold text-3xl flex max-md:text-2xl"> 
             <h1>Nome da pessoa</h1>
@@ -23,14 +23,23 @@
         </div>
 
         <!-- menu outos -->
-        <div class="sm:visible md:hidden flex flex-col gap-1 cursor-pointer">
+        <div class="sm:visible md:hidden flex flex-col gap-1 cursor-pointer" onclick="menu()">
             <div class="w-5 h-1 bg-black"></div>
             <div class="w-5 h-1 bg-black"></div>
             <div class="w-5 h-1 bg-black"></div>
         </div>
         
+        
+    </div>
+    <!-- segunda parte do menu -->
+    <div id="menu" class="hidden flex-col bg-yellow-300 items-center gap-2 z-10 relative">
+        <a href="#" class="hover:text-black"> Contato </a>
+        <a href="#" class="hover:text-black"> Sobre </a>
+        <a href="#" class="hover:text-black"> Slaaa </a>
     </div>
     <!-- Header end -->
+
+    <script src="./scripts/index.js"></script>
 
 </body>
 </html>
